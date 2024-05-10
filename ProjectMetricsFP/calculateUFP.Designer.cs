@@ -1,6 +1,6 @@
 ﻿namespace ProjectMetricsFP
 {
-    partial class Form1
+    partial class calculateUFP
     {
         /// <summary>
         ///  Required designer variable.
@@ -54,7 +54,7 @@
             logicalComplex = new TextBox();
             logicalAverage = new TextBox();
             logicalSimple = new TextBox();
-            calculateUFP = new Button();
+            calculateUFPbutton = new Button();
             SuspendLayout();
             // 
             // inputTotal
@@ -73,7 +73,7 @@
             // 
             // interfaceTotal
             // 
-            interfaceTotal.Location = new Point(522, 87);
+            interfaceTotal.Location = new Point(522, 196);
             interfaceTotal.Name = "interfaceTotal";
             interfaceTotal.Size = new Size(100, 23);
             interfaceTotal.TabIndex = 3;
@@ -87,7 +87,7 @@
             // 
             // logicalTotal
             // 
-            logicalTotal.Location = new Point(522, 203);
+            logicalTotal.Location = new Point(522, 90);
             logicalTotal.Name = "logicalTotal";
             logicalTotal.Size = new Size(100, 23);
             logicalTotal.TabIndex = 4;
@@ -122,7 +122,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(392, 90);
+            label4.Location = new Point(392, 199);
             label4.Name = "label4";
             label4.Size = new Size(124, 15);
             label4.TabIndex = 9;
@@ -131,7 +131,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(392, 206);
+            label5.Location = new Point(392, 93);
             label5.Name = "label5";
             label5.Size = new Size(114, 15);
             label5.TabIndex = 10;
@@ -221,7 +221,7 @@
             // 
             // interfaceComplex
             // 
-            interfaceComplex.Location = new Point(648, 116);
+            interfaceComplex.Location = new Point(648, 225);
             interfaceComplex.Name = "interfaceComplex";
             interfaceComplex.Size = new Size(100, 23);
             interfaceComplex.TabIndex = 24;
@@ -229,7 +229,7 @@
             // 
             // interfaceAverage
             // 
-            interfaceAverage.Location = new Point(648, 87);
+            interfaceAverage.Location = new Point(648, 196);
             interfaceAverage.Name = "interfaceAverage";
             interfaceAverage.Size = new Size(100, 23);
             interfaceAverage.TabIndex = 23;
@@ -237,7 +237,7 @@
             // 
             // interfaceSimple
             // 
-            interfaceSimple.Location = new Point(648, 58);
+            interfaceSimple.Location = new Point(648, 167);
             interfaceSimple.Name = "interfaceSimple";
             interfaceSimple.Size = new Size(100, 23);
             interfaceSimple.TabIndex = 22;
@@ -245,7 +245,7 @@
             // 
             // logicalComplex
             // 
-            logicalComplex.Location = new Point(648, 232);
+            logicalComplex.Location = new Point(648, 119);
             logicalComplex.Name = "logicalComplex";
             logicalComplex.Size = new Size(100, 23);
             logicalComplex.TabIndex = 27;
@@ -253,7 +253,7 @@
             // 
             // logicalAverage
             // 
-            logicalAverage.Location = new Point(648, 203);
+            logicalAverage.Location = new Point(648, 90);
             logicalAverage.Name = "logicalAverage";
             logicalAverage.Size = new Size(100, 23);
             logicalAverage.TabIndex = 26;
@@ -261,22 +261,22 @@
             // 
             // logicalSimple
             // 
-            logicalSimple.Location = new Point(648, 174);
+            logicalSimple.Location = new Point(648, 61);
             logicalSimple.Name = "logicalSimple";
             logicalSimple.Size = new Size(100, 23);
             logicalSimple.TabIndex = 25;
             logicalSimple.Tag = "Simple";
             // 
-            // calculateUFP
+            // calculateUFPbutton
             // 
-            calculateUFP.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            calculateUFP.Location = new Point(642, 332);
-            calculateUFP.Name = "calculateUFP";
-            calculateUFP.Size = new Size(106, 49);
-            calculateUFP.TabIndex = 28;
-            calculateUFP.Text = "Calculate UFP";
-            calculateUFP.UseVisualStyleBackColor = true;
-            calculateUFP.Click += calculateUFP_Click;
+            calculateUFPbutton.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            calculateUFPbutton.Location = new Point(642, 332);
+            calculateUFPbutton.Name = "calculateUFP";
+            calculateUFPbutton.Size = new Size(106, 49);
+            calculateUFPbutton.TabIndex = 28;
+            calculateUFPbutton.Text = "Calculate UFP";
+            calculateUFPbutton.UseVisualStyleBackColor = true;
+            calculateUFPbutton.Click += calculateUFP_Click;
             // 
             // Form1
             // 
@@ -284,7 +284,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
             ClientSize = new Size(800, 450);
-            Controls.Add(calculateUFP);
+            Controls.Add(calculateUFPbutton);
             Controls.Add(logicalComplex);
             Controls.Add(logicalAverage);
             Controls.Add(logicalSimple);
@@ -346,6 +346,6 @@
         private TextBox logicalComplex;
         private TextBox logicalAverage;
         private TextBox logicalSimple;
-        private Button calculateUFP;
+        private Button calculateUFPbutton;
     }
 }

@@ -2,13 +2,15 @@ using System.Drawing.Text;
 
 namespace ProjectMetricsFP
 {
-    public partial class Form1 : Form
+    public partial class calculateUFP : Form
     {
         TextBox[][] textBoxesComplexities;
         TextBox[] totalTextBoxes;
-        public Form1()
+        public static int ufpValue = 0;
+        Dictionary<int, int[]> complexityTableValues = new Dictionary<int, int[]>();
+        public calculateUFP()
         {
-            
+
             InitializeComponent();
 
             textBoxesComplexities = new TextBox[3][] {
@@ -45,19 +47,11 @@ namespace ProjectMetricsFP
                 textbox.Leave += (s, evt) => TextBox_Leave(s, evt, "Complex");
             }
 
-            //this.BackColor = ColorTranslator.FromHtml("#164073");
-            //Color labelColor = ColorTranslator.FromHtml("#FFFFFF");
+            //Initialize Complexity Table
+            createComplexityTable();
 
-            /*foreach (Control control in this.Controls)
-            {
-                // Check if the control is a label
-                if (control is Label)
-                {
-                    // Set the ForeColor of the label to the desired color
-                    ((Label)control).ForeColor = labelColor;
-                }
-            }
-            */
+
+
 
         }
 
@@ -84,7 +78,6 @@ namespace ProjectMetricsFP
             }
         }
 
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -92,11 +85,17 @@ namespace ProjectMetricsFP
 
         private void calculateUFP_Click(object sender, EventArgs e)
         {
-            verifyInputs();
+            if (verifyInputs())
+            {
+                calculateUFPValue();
+
+            }
+                
         }
 
-        private void verifyInputs()
+        private bool verifyInputs()
         {
+            bool valuesVerified = true;
             string[] complexities = new string[3] { "Simple", "Average", "Complex" };
 
             for (int i = 0; i < 5; i++)
@@ -105,9 +104,10 @@ namespace ProjectMetricsFP
                 for (int j = 0; j < 3; j++)
                 {
                     //Check if Simple,Average,Complex textbox empty
-                    if (complexities[i].Equals(textBoxesComplexities[j][i].Text))
+                    if (complexities[j].Equals(textBoxesComplexities[j][i].Text))
                     {
                         MessageBox.Show("Error: Empty textbox at " + textBoxesComplexities[j][i].Name, "Error Mismatch");
+                        valuesVerified = false;
                         break;
                     }
 
@@ -121,16 +121,47 @@ namespace ProjectMetricsFP
                     if (sum != Convert.ToInt32(totalTextBoxes[i].Text))
                     {
                         MessageBox.Show("Error: Mismatch of inputs occured at " + totalTextBoxes[i].Name, "Error Mismatch");
+                        valuesVerified = false;
                         break;
                     }
                 }
                 else
                 {
                     MessageBox.Show("Error: Empty textbox at " + totalTextBoxes[i].Name);
+                    valuesVerified = false;
                     break;
                 }
 
             }
+            return valuesVerified;
+        }
+
+        private void createComplexityTable()
+        {
+
+            complexityTableValues.Add(0, new int[] { 3, 4, 6 }); //input
+            complexityTableValues.Add(1, new int[] { 4, 5, 7 }); // output
+            complexityTableValues.Add(2, new int[] { 3, 4, 6 }); //inquiry
+            complexityTableValues.Add(3, new int[] { 5, 7, 10 }); //interface
+            complexityTableValues.Add(4, new int[] { 7, 10, 15 }); //logical
+        }
+
+        private void calculateUFPValue()
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                int sumPerParameter = 0;
+                for (int j = 0; j < 3; j++)
+                {
+
+                    sumPerParameter += Convert.ToInt32(textBoxesComplexities[j][i].Text) * complexityTableValues[i][j];
+
+                }
+                ufpValue += sumPerParameter;
+            }
+
+            //MessageBox.Show(ufpValue.ToString());
+            ufpValue = 0;
         }
     }
 }
