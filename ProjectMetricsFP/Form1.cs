@@ -8,7 +8,7 @@ namespace ProjectMetricsFP
         TextBox[] totalTextBoxes;
         public Form1()
         {
-            //This a test to commit project
+            
             InitializeComponent();
 
             textBoxesComplexities = new TextBox[3][] {
