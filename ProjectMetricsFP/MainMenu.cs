@@ -26,11 +26,13 @@ namespace ProjectMetricsFP
             calculateUFP ufpCalc;
             calculateDI diCalc;
 
-            if (string.IsNullOrEmpty(ufpTextbox.Text) && string.IsNullOrEmpty(diTextbox.Text) && string.IsNullOrEmpty(tcfTextbox.Text))
+            //If all givens are not empty
+            if (!(string.IsNullOrEmpty(ufpTextbox.Text)) && !(string.IsNullOrEmpty(diTextbox.Text)) && !(string.IsNullOrEmpty(tcfTextbox.Text)))
             {
                 MessageBox.Show("All not empty");
             }
 
+            //If UFP empty
             if (string.IsNullOrEmpty(ufpTextbox.Text))
             {
                 ufpCalc = new calculateUFP();
@@ -45,14 +47,15 @@ namespace ProjectMetricsFP
                 
             }
 
-            if (string.IsNullOrEmpty(diTextbox.Text))
+            //If BOTH DI and TCF are empty
+            if (string.IsNullOrEmpty(diTextbox.Text) && (string.IsNullOrEmpty(tcfTextbox.Text)))
             {
                 diCalc = new calculateDI();
-                diCalc.Show();
                 Visible = false;
                 MessageBox.Show(calculateUFP.ufpValue.ToString());
             }
 
+            //If TCF is empty
             if (string.IsNullOrEmpty(tcfTextbox.Text))
             {
                 MessageBox.Show("tcf empty");
