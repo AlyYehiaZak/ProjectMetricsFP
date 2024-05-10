@@ -8,6 +8,7 @@ namespace ProjectMetricsFP
         TextBox[] totalTextBoxes;
         public static int ufpValue = 0;
         Dictionary<int, int[]> complexityTableValues = new Dictionary<int, int[]>();
+        
         public calculateUFP()
         {
 
@@ -88,7 +89,8 @@ namespace ProjectMetricsFP
             if (verifyInputs())
             {
                 calculateUFPValue();
-
+                DialogResult = DialogResult.OK;
+                Close();
             }
                 
         }
@@ -160,8 +162,9 @@ namespace ProjectMetricsFP
                 ufpValue += sumPerParameter;
             }
 
-            //MessageBox.Show(ufpValue.ToString());
-            ufpValue = 0;
+            //MessageBox.Show(ufpValue.ToString());   
         }
+
+     
     }
 }
