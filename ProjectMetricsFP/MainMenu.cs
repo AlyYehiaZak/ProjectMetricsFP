@@ -46,6 +46,14 @@ namespace ProjectMetricsFP
 
                 
             }
+            
+            bool istcfgiven = true;
+                //If TCF is empty
+             if (string.IsNullOrEmpty(tcfTextbox.Text))
+            {
+                istcfgiven = false;
+            }
+          
 
             //If BOTH DI and TCF are empty
             if (string.IsNullOrEmpty(diTextbox.Text) && (string.IsNullOrEmpty(tcfTextbox.Text)))
@@ -54,12 +62,16 @@ namespace ProjectMetricsFP
                 DialogResult result = diCalc.ShowDialog();
                 Visible = false;
                 MessageBox.Show(calculateDI.divlaue.ToString());
+                if (!istcfgiven)
+                {
+                    float tcfvalue = (float)(0.65 + 0.01 * calculateDI.divlaue);
+                    MessageBox.Show("tcf value is: " + tcfvalue);
+                }
             }
 
-            //If TCF is empty
-            if (string.IsNullOrEmpty(tcfTextbox.Text))
+            if (!istcfgiven)
             {
-                MessageBox.Show("tcf empty");
+                MessageBox.Show("tcf values wasnt given");
             }
 
             Close();
