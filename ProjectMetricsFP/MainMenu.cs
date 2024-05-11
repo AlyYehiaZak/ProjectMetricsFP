@@ -51,8 +51,9 @@ namespace ProjectMetricsFP
             if (string.IsNullOrEmpty(diTextbox.Text) && (string.IsNullOrEmpty(tcfTextbox.Text)))
             {
                 diCalc = new calculateDI();
+                DialogResult result = diCalc.ShowDialog();
                 Visible = false;
-                MessageBox.Show(calculateUFP.ufpValue.ToString());
+                MessageBox.Show(calculateDI.divlaue.ToString());
             }
 
             //If TCF is empty
