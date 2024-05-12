@@ -12,13 +12,13 @@ namespace ProjectMetricsFP
 {
     public partial class calculateDI : Form
     {
-        ComboBox[] comboBox; 
-        public static int divlaue=0;
+        ComboBox[] comboBox;
+        public static int diValue = 0;
         public calculateDI()
         {
             InitializeComponent();
-            comboBox = new ComboBox[14] {comboBox1,comboBox2,comboBox3,comboBox4, comboBox5, comboBox6, comboBox7, comboBox8, comboBox9, comboBox10, comboBox11, comboBox12, comboBox13, comboBox14};
-            for(int i = 0; i < comboBox.Length; i++)
+            comboBox = new ComboBox[14] { comboBox1, comboBox2, comboBox3, comboBox4, comboBox5, comboBox6, comboBox7, comboBox8, comboBox9, comboBox10, comboBox11, comboBox12, comboBox13, comboBox14 };
+            for (int i = 0; i < comboBox.Length; i++)
             {
                 comboBox[i].Items.AddRange(new object[] { "No influence", "incidiental", "Moderate", "Average", "Significant", "Essential" });
             }
@@ -51,7 +51,8 @@ namespace ProjectMetricsFP
                 sum += D[comboBox[i].Text];
             }
             //MessageBox.Show("the result is: "+sum.ToString());
-            divlaue = sum;
+            diValue = sum;
+
             DialogResult = DialogResult.OK;
             Close();
         }

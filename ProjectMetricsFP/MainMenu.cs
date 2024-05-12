@@ -13,69 +13,84 @@ namespace ProjectMetricsFP
     public partial class MainMenu : Form
     {
 
-
+        public static double tcfValue = 0; 
         public MainMenu()
         {
             InitializeComponent();
-
-
         }
 
         private void proceedButton_Click(object sender, EventArgs e)
         {
-            calculateUFP ufpCalc;
-            calculateDI diCalc;
+            calculateUFP ufpCalc = new calculateUFP();
+            calculateDI diCalc = new calculateDI();
+            bool istcfgiven = true;
+            
 
             //If all givens are not empty
             if (!(string.IsNullOrEmpty(ufpTextbox.Text)) && !(string.IsNullOrEmpty(diTextbox.Text)) && !(string.IsNullOrEmpty(tcfTextbox.Text)))
             {
-                MessageBox.Show("All not empty");
+                calculateUFP.ufpValue = Convert.ToInt32(ufpTextbox.Text);
+                calculateDI.diValue = Convert.ToInt32(diTextbox.Text);
+                tcfValue = Convert.ToDouble(tcfTextbox.Text);
             }
-
-            //If UFP empty
-            if (string.IsNullOrEmpty(ufpTextbox.Text))
+            else
             {
-                ufpCalc = new calculateUFP();
-                DialogResult result = ufpCalc.ShowDialog();
-                Visible = false;
-
-                if(result == DialogResult.OK)
+                //If UFP empty
+                if (string.IsNullOrEmpty(ufpTextbox.Text))
                 {
-                    MessageBox.Show(calculateUFP.ufpValue.ToString());
+
+                    DialogResult result = ufpCalc.ShowDialog();
+                    Visible = false;
+
+                    //if (result == DialogResult.OK)
+                    //{
+                    //    MessageBox.Show(calculateUFP.ufpValue.ToString());
+                    //}
+                } else
+                    calculateUFP.ufpValue = Convert.ToInt32(ufpTextbox.Text);
+
+                //If BOTH DI and TCF are empty
+                if (string.IsNullOrEmpty(diTextbox.Text) && (string.IsNullOrEmpty(tcfTextbox.Text)))
+                {
+
+                    DialogResult result = diCalc.ShowDialog();
+                    Visible = false;
+                    //MessageBox.Show(calculateDI.diValue.ToString());
+                    if (!istcfgiven)
+                    {
+                        tcfValue = (double)(0.65 + (0.01 * calculateDI.diValue));
+                        //MessageBox.Show("tcf value is: " + tcfValue);
+                    }
                 }
 
-                
-            }
-            
-            bool istcfgiven = true;
                 //If TCF is empty
-             if (string.IsNullOrEmpty(tcfTextbox.Text))
-            {
-                istcfgiven = false;
-            }
-          
-
-            //If BOTH DI and TCF are empty
-            if (string.IsNullOrEmpty(diTextbox.Text) && (string.IsNullOrEmpty(tcfTextbox.Text)))
-            {
-                diCalc = new calculateDI();
-                DialogResult result = diCalc.ShowDialog();
-                Visible = false;
-                MessageBox.Show(calculateDI.divlaue.ToString());
-                if (!istcfgiven)
+                if (string.IsNullOrEmpty(tcfTextbox.Text))
                 {
-                    float tcfvalue = (float)(0.65 + 0.01 * calculateDI.divlaue);
-                    MessageBox.Show("tcf value is: " + tcfvalue);
-                }
+                    istcfgiven = false;
+                    if(string.IsNullOrEmpty(diTextbox.Text))
+                    {
+                        diTextbox.Text = "0";
+                    } 
+                    else
+                        calculateDI.diValue = Convert.ToInt32(diTextbox.Text);
+                    tcfValue = (double)(0.65 + (0.01 * calculateDI.diValue));
+                } else
+                    tcfValue = Convert.ToDouble(tcfTextbox.Text);
+
+
+                //if (!istcfgiven)
+                //{ 
+                //    MessageBox.Show("tcf value is: " + tcfValue);
+                //}
             }
 
-            if (!istcfgiven)
-            {
-                MessageBox.Show("tcf values wasnt given");
-            }
+
+            Summary summary = new Summary(calculateUFP.ufpValue, calculateDI.diValue,tcfValue);
+            summary.ShowDialog();
+            Visible = false;
 
             Close();
-            
+
         }
     }
 }

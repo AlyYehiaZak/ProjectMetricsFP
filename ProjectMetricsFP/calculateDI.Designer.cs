@@ -28,342 +28,355 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.DC = new System.Windows.Forms.Label();
-            this.DDP = new System.Windows.Forms.Label();
-            this.P = new System.Windows.Forms.Label();
-            this.HUC = new System.Windows.Forms.Label();
-            this.TR = new System.Windows.Forms.Label();
-            this.ode = new System.Windows.Forms.Label();
-            this.eue = new System.Windows.Forms.Label();
-            this.ou = new System.Windows.Forms.Label();
-            this.cp = new System.Windows.Forms.Label();
-            this.r = new System.Windows.Forms.Label();
-            this.ie = new System.Windows.Forms.Label();
-            this.oe = new System.Windows.Forms.Label();
-            this.MS = new System.Windows.Forms.Label();
-            this.FC = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            DC = new Label();
+            DDP = new Label();
+            P = new Label();
+            HUC = new Label();
+            TR = new Label();
+            ode = new Label();
+            eue = new Label();
+            ou = new Label();
+            cp = new Label();
+            r = new Label();
+            ie = new Label();
+            oe = new Label();
+            MS = new Label();
+            FC = new Label();
+            comboBox1 = new ComboBox();
+            comboBox2 = new ComboBox();
+            comboBox3 = new ComboBox();
+            comboBox4 = new ComboBox();
+            comboBox5 = new ComboBox();
+            comboBox6 = new ComboBox();
+            comboBox7 = new ComboBox();
+            comboBox8 = new ComboBox();
+            comboBox9 = new ComboBox();
+            comboBox10 = new ComboBox();
+            comboBox11 = new ComboBox();
+            comboBox12 = new ComboBox();
+            comboBox13 = new ComboBox();
+            comboBox14 = new ComboBox();
+            button1 = new Button();
+            SuspendLayout();
             // 
             // DC
             // 
-            this.DC.AutoSize = true;
-            this.DC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DC.Location = new System.Drawing.Point(33, 25);
-            this.DC.Name = "DC";
-            this.DC.Size = new System.Drawing.Size(197, 28);
-            this.DC.TabIndex = 0;
-            this.DC.Text = "Data Communication";
-            this.DC.Click += new System.EventHandler(this.label1_Click);
+            DC.AutoSize = true;
+            DC.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            DC.Location = new Point(29, 19);
+            DC.Name = "DC";
+            DC.Size = new Size(157, 21);
+            DC.TabIndex = 0;
+            DC.Text = "Data Communication";
+            DC.Click += label1_Click;
             // 
             // DDP
             // 
-            this.DDP.AutoSize = true;
-            this.DDP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DDP.Location = new System.Drawing.Point(33, 62);
-            this.DDP.Name = "DDP";
-            this.DDP.Size = new System.Drawing.Size(253, 28);
-            this.DDP.TabIndex = 1;
-            this.DDP.Text = "Distributed data processing";
+            DDP.AutoSize = true;
+            DDP.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            DDP.Location = new Point(29, 46);
+            DDP.Name = "DDP";
+            DDP.Size = new Size(200, 21);
+            DDP.TabIndex = 1;
+            DDP.Text = "Distributed data processing";
             // 
             // P
             // 
-            this.P.AutoSize = true;
-            this.P.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.P.Location = new System.Drawing.Point(33, 103);
-            this.P.Name = "P";
-            this.P.Size = new System.Drawing.Size(121, 28);
-            this.P.TabIndex = 2;
-            this.P.Text = "Performance";
+            P.AutoSize = true;
+            P.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            P.Location = new Point(29, 77);
+            P.Name = "P";
+            P.Size = new Size(98, 21);
+            P.TabIndex = 2;
+            P.Text = "Performance";
             // 
             // HUC
             // 
-            this.HUC.AutoSize = true;
-            this.HUC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.HUC.Location = new System.Drawing.Point(33, 143);
-            this.HUC.Name = "HUC";
-            this.HUC.Size = new System.Drawing.Size(245, 28);
-            this.HUC.TabIndex = 3;
-            this.HUC.Text = "Heavily used configuration";
-            this.HUC.Click += new System.EventHandler(this.label3_Click);
+            HUC.AutoSize = true;
+            HUC.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            HUC.Location = new Point(29, 107);
+            HUC.Name = "HUC";
+            HUC.Size = new Size(195, 21);
+            HUC.TabIndex = 3;
+            HUC.Text = "Heavily used configuration";
+            HUC.Click += label3_Click;
             // 
             // TR
             // 
-            this.TR.AutoSize = true;
-            this.TR.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TR.Location = new System.Drawing.Point(33, 181);
-            this.TR.Name = "TR";
-            this.TR.Size = new System.Drawing.Size(154, 28);
-            this.TR.TabIndex = 4;
-            this.TR.Text = "Transaction Rate";
+            TR.AutoSize = true;
+            TR.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            TR.Location = new Point(29, 136);
+            TR.Name = "TR";
+            TR.Size = new Size(124, 21);
+            TR.TabIndex = 4;
+            TR.Text = "Transaction Rate";
             // 
             // ode
             // 
-            this.ode.AutoSize = true;
-            this.ode.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ode.Location = new System.Drawing.Point(33, 220);
-            this.ode.Name = "ode";
-            this.ode.Size = new System.Drawing.Size(160, 28);
-            this.ode.TabIndex = 5;
-            this.ode.Text = "online data entry";
+            ode.AutoSize = true;
+            ode.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            ode.Location = new Point(29, 165);
+            ode.Name = "ode";
+            ode.Size = new Size(127, 21);
+            ode.TabIndex = 5;
+            ode.Text = "online data entry";
             // 
             // eue
             // 
-            this.eue.AutoSize = true;
-            this.eue.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.eue.Location = new System.Drawing.Point(33, 255);
-            this.eue.Name = "eue";
-            this.eue.Size = new System.Drawing.Size(172, 28);
-            this.eue.TabIndex = 6;
-            this.eue.Text = "end user efficiency";
+            eue.AutoSize = true;
+            eue.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            eue.Location = new Point(29, 191);
+            eue.Name = "eue";
+            eue.Size = new Size(139, 21);
+            eue.TabIndex = 6;
+            eue.Text = "end user efficiency";
             // 
             // ou
             // 
-            this.ou.AutoSize = true;
-            this.ou.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ou.Location = new System.Drawing.Point(33, 290);
-            this.ou.Name = "ou";
-            this.ou.Size = new System.Drawing.Size(133, 28);
-            this.ou.TabIndex = 7;
-            this.ou.Text = "online update";
+            ou.AutoSize = true;
+            ou.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            ou.Location = new Point(29, 218);
+            ou.Name = "ou";
+            ou.Size = new Size(105, 21);
+            ou.TabIndex = 7;
+            ou.Text = "online update";
             // 
             // cp
             // 
-            this.cp.AutoSize = true;
-            this.cp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cp.Location = new System.Drawing.Point(33, 325);
-            this.cp.Name = "cp";
-            this.cp.Size = new System.Drawing.Size(188, 28);
-            this.cp.TabIndex = 8;
-            this.cp.Text = "Complex processing";
+            cp.AutoSize = true;
+            cp.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            cp.Location = new Point(29, 244);
+            cp.Name = "cp";
+            cp.Size = new Size(150, 21);
+            cp.TabIndex = 8;
+            cp.Text = "Complex processing";
             // 
             // r
             // 
-            this.r.AutoSize = true;
-            this.r.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.r.Location = new System.Drawing.Point(33, 357);
-            this.r.Name = "r";
-            this.r.Size = new System.Drawing.Size(102, 28);
-            this.r.TabIndex = 9;
-            this.r.Text = "reusability";
+            r.AutoSize = true;
+            r.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            r.Location = new Point(29, 268);
+            r.Name = "r";
+            r.Size = new Size(82, 21);
+            r.TabIndex = 9;
+            r.Text = "reusability";
             // 
             // ie
             // 
-            this.ie.AutoSize = true;
-            this.ie.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ie.Location = new System.Drawing.Point(28, 395);
-            this.ie.Name = "ie";
-            this.ie.Size = new System.Drawing.Size(151, 28);
-            this.ie.TabIndex = 10;
-            this.ie.Text = "installation ease";
+            ie.AutoSize = true;
+            ie.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            ie.Location = new Point(32, 296);
+            ie.Name = "ie";
+            ie.Size = new Size(121, 21);
+            ie.TabIndex = 10;
+            ie.Text = "installation ease";
             // 
             // oe
             // 
-            this.oe.AutoSize = true;
-            this.oe.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.oe.Location = new System.Drawing.Point(28, 432);
-            this.oe.Name = "oe";
-            this.oe.Size = new System.Drawing.Size(156, 28);
-            this.oe.TabIndex = 11;
-            this.oe.Text = "operational ease";
+            oe.AutoSize = true;
+            oe.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            oe.Location = new Point(29, 322);
+            oe.Name = "oe";
+            oe.Size = new Size(124, 21);
+            oe.TabIndex = 11;
+            oe.Text = "operational ease";
             // 
             // MS
             // 
-            this.MS.AutoSize = true;
-            this.MS.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MS.Location = new System.Drawing.Point(38, 471);
-            this.MS.Name = "MS";
-            this.MS.Size = new System.Drawing.Size(128, 28);
-            this.MS.TabIndex = 12;
-            this.MS.Text = "Multiple sites";
+            MS.AutoSize = true;
+            MS.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            MS.Location = new Point(29, 353);
+            MS.Name = "MS";
+            MS.Size = new Size(102, 21);
+            MS.TabIndex = 12;
+            MS.Text = "Multiple sites";
             // 
             // FC
             // 
-            this.FC.AutoSize = true;
-            this.FC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FC.Location = new System.Drawing.Point(33, 510);
-            this.FC.Name = "FC";
-            this.FC.Size = new System.Drawing.Size(157, 28);
-            this.FC.TabIndex = 13;
-            this.FC.Text = "Facilitate change";
+            FC.AutoSize = true;
+            FC.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            FC.Location = new Point(29, 382);
+            FC.Name = "FC";
+            FC.Size = new Size(124, 21);
+            FC.TabIndex = 13;
+            FC.Text = "Facilitate change";
             // 
             // comboBox1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(436, 25);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(151, 28);
-            this.comboBox1.TabIndex = 14;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(382, 19);
+            comboBox1.Margin = new Padding(3, 2, 3, 2);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(133, 23);
+            comboBox1.TabIndex = 14;
             // 
             // comboBox2
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(436, 62);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(151, 28);
-            this.comboBox2.TabIndex = 15;
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(382, 46);
+            comboBox2.Margin = new Padding(3, 2, 3, 2);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(133, 23);
+            comboBox2.TabIndex = 15;
             // 
             // comboBox3
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(436, 103);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(151, 28);
-            this.comboBox3.TabIndex = 16;
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Location = new Point(382, 77);
+            comboBox3.Margin = new Padding(3, 2, 3, 2);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(133, 23);
+            comboBox3.TabIndex = 16;
             // 
             // comboBox4
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(436, 143);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(151, 28);
-            this.comboBox4.TabIndex = 17;
+            comboBox4.FormattingEnabled = true;
+            comboBox4.Location = new Point(382, 107);
+            comboBox4.Margin = new Padding(3, 2, 3, 2);
+            comboBox4.Name = "comboBox4";
+            comboBox4.Size = new Size(133, 23);
+            comboBox4.TabIndex = 17;
             // 
             // comboBox5
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(436, 185);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(151, 28);
-            this.comboBox5.TabIndex = 18;
+            comboBox5.FormattingEnabled = true;
+            comboBox5.Location = new Point(382, 139);
+            comboBox5.Margin = new Padding(3, 2, 3, 2);
+            comboBox5.Name = "comboBox5";
+            comboBox5.Size = new Size(133, 23);
+            comboBox5.TabIndex = 18;
             // 
             // comboBox6
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(436, 224);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(151, 28);
-            this.comboBox6.TabIndex = 19;
+            comboBox6.FormattingEnabled = true;
+            comboBox6.Location = new Point(382, 168);
+            comboBox6.Margin = new Padding(3, 2, 3, 2);
+            comboBox6.Name = "comboBox6";
+            comboBox6.Size = new Size(133, 23);
+            comboBox6.TabIndex = 19;
             // 
             // comboBox7
             // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(436, 259);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(151, 28);
-            this.comboBox7.TabIndex = 20;
+            comboBox7.FormattingEnabled = true;
+            comboBox7.Location = new Point(382, 194);
+            comboBox7.Margin = new Padding(3, 2, 3, 2);
+            comboBox7.Name = "comboBox7";
+            comboBox7.Size = new Size(133, 23);
+            comboBox7.TabIndex = 20;
             // 
             // comboBox8
             // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(436, 293);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(151, 28);
-            this.comboBox8.TabIndex = 21;
+            comboBox8.FormattingEnabled = true;
+            comboBox8.Location = new Point(382, 220);
+            comboBox8.Margin = new Padding(3, 2, 3, 2);
+            comboBox8.Name = "comboBox8";
+            comboBox8.Size = new Size(133, 23);
+            comboBox8.TabIndex = 21;
             // 
             // comboBox9
             // 
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(436, 327);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(151, 28);
-            this.comboBox9.TabIndex = 22;
+            comboBox9.FormattingEnabled = true;
+            comboBox9.Location = new Point(382, 245);
+            comboBox9.Margin = new Padding(3, 2, 3, 2);
+            comboBox9.Name = "comboBox9";
+            comboBox9.Size = new Size(133, 23);
+            comboBox9.TabIndex = 22;
             // 
             // comboBox10
             // 
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(436, 361);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(151, 28);
-            this.comboBox10.TabIndex = 23;
+            comboBox10.FormattingEnabled = true;
+            comboBox10.Location = new Point(382, 271);
+            comboBox10.Margin = new Padding(3, 2, 3, 2);
+            comboBox10.Name = "comboBox10";
+            comboBox10.Size = new Size(133, 23);
+            comboBox10.TabIndex = 23;
             // 
             // comboBox11
             // 
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Location = new System.Drawing.Point(436, 395);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(151, 28);
-            this.comboBox11.TabIndex = 24;
+            comboBox11.FormattingEnabled = true;
+            comboBox11.Location = new Point(382, 296);
+            comboBox11.Margin = new Padding(3, 2, 3, 2);
+            comboBox11.Name = "comboBox11";
+            comboBox11.Size = new Size(133, 23);
+            comboBox11.TabIndex = 24;
             // 
             // comboBox12
             // 
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Location = new System.Drawing.Point(436, 432);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(151, 28);
-            this.comboBox12.TabIndex = 25;
+            comboBox12.FormattingEnabled = true;
+            comboBox12.Location = new Point(382, 324);
+            comboBox12.Margin = new Padding(3, 2, 3, 2);
+            comboBox12.Name = "comboBox12";
+            comboBox12.Size = new Size(133, 23);
+            comboBox12.TabIndex = 25;
             // 
             // comboBox13
             // 
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Location = new System.Drawing.Point(436, 471);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(151, 28);
-            this.comboBox13.TabIndex = 26;
+            comboBox13.FormattingEnabled = true;
+            comboBox13.Location = new Point(382, 353);
+            comboBox13.Margin = new Padding(3, 2, 3, 2);
+            comboBox13.Name = "comboBox13";
+            comboBox13.Size = new Size(133, 23);
+            comboBox13.TabIndex = 26;
             // 
             // comboBox14
             // 
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Location = new System.Drawing.Point(436, 510);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(151, 28);
-            this.comboBox14.TabIndex = 27;
+            comboBox14.FormattingEnabled = true;
+            comboBox14.Location = new Point(382, 382);
+            comboBox14.Margin = new Padding(3, 2, 3, 2);
+            comboBox14.Name = "comboBox14";
+            comboBox14.Size = new Size(133, 23);
+            comboBox14.TabIndex = 27;
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(658, 227);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(196, 94);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Calculate";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Location = new Point(576, 170);
+            button1.Margin = new Padding(3, 2, 3, 2);
+            button1.Name = "button1";
+            button1.Size = new Size(172, 70);
+            button1.TabIndex = 28;
+            button1.Text = "Calculate";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // calculateDI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 600);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox14);
-            this.Controls.Add(this.comboBox13);
-            this.Controls.Add(this.comboBox12);
-            this.Controls.Add(this.comboBox11);
-            this.Controls.Add(this.comboBox10);
-            this.Controls.Add(this.comboBox9);
-            this.Controls.Add(this.comboBox8);
-            this.Controls.Add(this.comboBox7);
-            this.Controls.Add(this.comboBox6);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.FC);
-            this.Controls.Add(this.MS);
-            this.Controls.Add(this.oe);
-            this.Controls.Add(this.ie);
-            this.Controls.Add(this.r);
-            this.Controls.Add(this.cp);
-            this.Controls.Add(this.ou);
-            this.Controls.Add(this.eue);
-            this.Controls.Add(this.ode);
-            this.Controls.Add(this.TR);
-            this.Controls.Add(this.HUC);
-            this.Controls.Add(this.P);
-            this.Controls.Add(this.DDP);
-            this.Controls.Add(this.DC);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "calculateDI";
-            this.Text = "calculateDI";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(button1);
+            Controls.Add(comboBox14);
+            Controls.Add(comboBox13);
+            Controls.Add(comboBox12);
+            Controls.Add(comboBox11);
+            Controls.Add(comboBox10);
+            Controls.Add(comboBox9);
+            Controls.Add(comboBox8);
+            Controls.Add(comboBox7);
+            Controls.Add(comboBox6);
+            Controls.Add(comboBox5);
+            Controls.Add(comboBox4);
+            Controls.Add(comboBox3);
+            Controls.Add(comboBox2);
+            Controls.Add(comboBox1);
+            Controls.Add(FC);
+            Controls.Add(MS);
+            Controls.Add(oe);
+            Controls.Add(ie);
+            Controls.Add(r);
+            Controls.Add(cp);
+            Controls.Add(ou);
+            Controls.Add(eue);
+            Controls.Add(ode);
+            Controls.Add(TR);
+            Controls.Add(HUC);
+            Controls.Add(P);
+            Controls.Add(DDP);
+            Controls.Add(DC);
+            Name = "calculateDI";
+            Text = "calculateDI";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
