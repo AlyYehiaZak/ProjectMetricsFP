@@ -28,137 +28,143 @@
         /// </summary>
         private void InitializeComponent()
         {
-            welcomeLabel = new Label();
-            madeByLabel = new Label();
-            ufpLabel = new Label();
-            diLabel = new Label();
-            tcfLabel = new Label();
-            sweLabel = new Label();
-            ufpTextbox = new TextBox();
-            diTextbox = new TextBox();
-            tcfTextbox = new TextBox();
-            instructionLabel = new Label();
-            proceedButton = new Button();
-            SuspendLayout();
+            this.welcomeLabel = new System.Windows.Forms.Label();
+            this.madeByLabel = new System.Windows.Forms.Label();
+            this.ufpLabel = new System.Windows.Forms.Label();
+            this.diLabel = new System.Windows.Forms.Label();
+            this.tcfLabel = new System.Windows.Forms.Label();
+            this.sweLabel = new System.Windows.Forms.Label();
+            this.ufpTextbox = new System.Windows.Forms.TextBox();
+            this.diTextbox = new System.Windows.Forms.TextBox();
+            this.tcfTextbox = new System.Windows.Forms.TextBox();
+            this.instructionLabel = new System.Windows.Forms.Label();
+            this.proceedButton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // welcomeLabel
             // 
-            welcomeLabel.AutoSize = true;
-            welcomeLabel.Font = new Font("Segoe UI", 26.25F, FontStyle.Italic, GraphicsUnit.Point);
-            welcomeLabel.Location = new Point(191, 32);
-            welcomeLabel.Name = "welcomeLabel";
-            welcomeLabel.Size = new Size(419, 47);
-            welcomeLabel.TabIndex = 0;
-            welcomeLabel.Text = "Welcome To FP Calculator";
+            this.welcomeLabel.AutoSize = true;
+            this.welcomeLabel.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.welcomeLabel.Location = new System.Drawing.Point(218, 43);
+            this.welcomeLabel.Name = "welcomeLabel";
+            this.welcomeLabel.Size = new System.Drawing.Size(526, 60);
+            this.welcomeLabel.TabIndex = 0;
+            this.welcomeLabel.Text = "Welcome To FP Calculator";
             // 
             // madeByLabel
             // 
-            madeByLabel.AutoSize = true;
-            madeByLabel.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            madeByLabel.Location = new Point(173, 393);
-            madeByLabel.Name = "madeByLabel";
-            madeByLabel.Size = new Size(457, 17);
-            madeByLabel.TabIndex = 1;
-            madeByLabel.Text = "Made By: Ahmed Sameh, Ahmed Tarek, Aly Yehia, Fadi Magdi, Karim Chehab ";
+            this.madeByLabel.AutoSize = true;
+            this.madeByLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.madeByLabel.Location = new System.Drawing.Point(198, 524);
+            this.madeByLabel.Name = "madeByLabel";
+            this.madeByLabel.Size = new System.Drawing.Size(596, 23);
+            this.madeByLabel.TabIndex = 1;
+            this.madeByLabel.Text = "Made By: Ahmed Sameh, Ahmed Tarek, Aly Yehia, Fadi Magdi, Karim Chehab ";
             // 
             // ufpLabel
             // 
-            ufpLabel.AutoSize = true;
-            ufpLabel.Location = new Point(286, 195);
-            ufpLabel.Name = "ufpLabel";
-            ufpLabel.Size = new Size(28, 15);
-            ufpLabel.TabIndex = 2;
-            ufpLabel.Text = "UFP";
+            this.ufpLabel.AutoSize = true;
+            this.ufpLabel.Location = new System.Drawing.Point(327, 260);
+            this.ufpLabel.Name = "ufpLabel";
+            this.ufpLabel.Size = new System.Drawing.Size(34, 20);
+            this.ufpLabel.TabIndex = 2;
+            this.ufpLabel.Text = "UFP";
             // 
             // diLabel
             // 
-            diLabel.AutoSize = true;
-            diLabel.Location = new Point(286, 235);
-            diLabel.Name = "diLabel";
-            diLabel.Size = new Size(18, 15);
-            diLabel.TabIndex = 3;
-            diLabel.Text = "DI";
+            this.diLabel.AutoSize = true;
+            this.diLabel.Location = new System.Drawing.Point(327, 313);
+            this.diLabel.Name = "diLabel";
+            this.diLabel.Size = new System.Drawing.Size(24, 20);
+            this.diLabel.TabIndex = 3;
+            this.diLabel.Text = "DI";
             // 
             // tcfLabel
             // 
-            tcfLabel.AutoSize = true;
-            tcfLabel.Location = new Point(286, 277);
-            tcfLabel.Name = "tcfLabel";
-            tcfLabel.Size = new Size(26, 15);
-            tcfLabel.TabIndex = 4;
-            tcfLabel.Text = "TCF";
+            this.tcfLabel.AutoSize = true;
+            this.tcfLabel.Location = new System.Drawing.Point(327, 369);
+            this.tcfLabel.Name = "tcfLabel";
+            this.tcfLabel.Size = new System.Drawing.Size(32, 20);
+            this.tcfLabel.TabIndex = 4;
+            this.tcfLabel.Text = "TCF";
             // 
             // sweLabel
             // 
-            sweLabel.AutoSize = true;
-            sweLabel.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            sweLabel.Location = new Point(381, 424);
-            sweLabel.Name = "sweLabel";
-            sweLabel.Size = new Size(41, 17);
-            sweLabel.TabIndex = 5;
-            sweLabel.Text = "SWE3";
+            this.sweLabel.AutoSize = true;
+            this.sweLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.sweLabel.Location = new System.Drawing.Point(435, 565);
+            this.sweLabel.Name = "sweLabel";
+            this.sweLabel.Size = new System.Drawing.Size(53, 23);
+            this.sweLabel.TabIndex = 5;
+            this.sweLabel.Text = "SWE3";
             // 
             // ufpTextbox
             // 
-            ufpTextbox.Location = new Point(343, 192);
-            ufpTextbox.Name = "ufpTextbox";
-            ufpTextbox.Size = new Size(133, 23);
-            ufpTextbox.TabIndex = 6;
+            this.ufpTextbox.Location = new System.Drawing.Point(392, 256);
+            this.ufpTextbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ufpTextbox.Name = "ufpTextbox";
+            this.ufpTextbox.Size = new System.Drawing.Size(151, 27);
+            this.ufpTextbox.TabIndex = 6;
             // 
             // diTextbox
             // 
-            diTextbox.Location = new Point(343, 232);
-            diTextbox.Name = "diTextbox";
-            diTextbox.Size = new Size(133, 23);
-            diTextbox.TabIndex = 7;
+            this.diTextbox.Location = new System.Drawing.Point(392, 309);
+            this.diTextbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.diTextbox.Name = "diTextbox";
+            this.diTextbox.Size = new System.Drawing.Size(151, 27);
+            this.diTextbox.TabIndex = 7;
             // 
             // tcfTextbox
             // 
-            tcfTextbox.Location = new Point(343, 274);
-            tcfTextbox.Name = "tcfTextbox";
-            tcfTextbox.Size = new Size(133, 23);
-            tcfTextbox.TabIndex = 8;
+            this.tcfTextbox.Location = new System.Drawing.Point(392, 365);
+            this.tcfTextbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tcfTextbox.Name = "tcfTextbox";
+            this.tcfTextbox.Size = new System.Drawing.Size(151, 27);
+            this.tcfTextbox.TabIndex = 8;
             // 
             // instructionLabel
             // 
-            instructionLabel.AutoSize = true;
-            instructionLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            instructionLabel.Location = new Point(101, 122);
-            instructionLabel.Name = "instructionLabel";
-            instructionLabel.Size = new Size(585, 21);
-            instructionLabel.TabIndex = 9;
-            instructionLabel.Text = "Please provide the following givens if you want to skip certain calculations:";
+            this.instructionLabel.AutoSize = true;
+            this.instructionLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.instructionLabel.Location = new System.Drawing.Point(115, 163);
+            this.instructionLabel.Name = "instructionLabel";
+            this.instructionLabel.Size = new System.Drawing.Size(731, 28);
+            this.instructionLabel.TabIndex = 9;
+            this.instructionLabel.Text = "Please provide the following givens if you want to skip certain calculations:";
             // 
             // proceedButton
             // 
-            proceedButton.Location = new Point(367, 337);
-            proceedButton.Name = "proceedButton";
-            proceedButton.Size = new Size(75, 23);
-            proceedButton.TabIndex = 10;
-            proceedButton.Text = "Proceed";
-            proceedButton.UseVisualStyleBackColor = true;
-            proceedButton.Click += proceedButton_Click;
+            this.proceedButton.Location = new System.Drawing.Point(419, 449);
+            this.proceedButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.proceedButton.Name = "proceedButton";
+            this.proceedButton.Size = new System.Drawing.Size(86, 31);
+            this.proceedButton.TabIndex = 10;
+            this.proceedButton.Text = "Proceed";
+            this.proceedButton.UseVisualStyleBackColor = true;
+            this.proceedButton.Click += new System.EventHandler(this.proceedButton_Click);
             // 
             // MainMenu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(proceedButton);
-            Controls.Add(instructionLabel);
-            Controls.Add(tcfTextbox);
-            Controls.Add(diTextbox);
-            Controls.Add(ufpTextbox);
-            Controls.Add(sweLabel);
-            Controls.Add(tcfLabel);
-            Controls.Add(diLabel);
-            Controls.Add(ufpLabel);
-            Controls.Add(madeByLabel);
-            Controls.Add(welcomeLabel);
-            Name = "MainMenu";
-            Text = "MainMenu";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(927, 600);
+            this.Controls.Add(this.proceedButton);
+            this.Controls.Add(this.instructionLabel);
+            this.Controls.Add(this.tcfTextbox);
+            this.Controls.Add(this.diTextbox);
+            this.Controls.Add(this.ufpTextbox);
+            this.Controls.Add(this.sweLabel);
+            this.Controls.Add(this.tcfLabel);
+            this.Controls.Add(this.diLabel);
+            this.Controls.Add(this.ufpLabel);
+            this.Controls.Add(this.madeByLabel);
+            this.Controls.Add(this.welcomeLabel);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "MainMenu";
+            this.Text = "MainMenu";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
