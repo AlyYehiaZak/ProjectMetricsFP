@@ -316,9 +316,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(640, 218);
+            this.button1.Location = new System.Drawing.Point(658, 227);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(230, 164);
+            this.button1.Size = new System.Drawing.Size(196, 94);
             this.button1.TabIndex = 28;
             this.button1.Text = "Calculate";
             this.button1.UseVisualStyleBackColor = true;
