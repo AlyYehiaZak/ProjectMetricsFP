@@ -31,10 +31,10 @@ namespace ProjectMetricsFP
         {
             InitializeComponent();
 
-            ufpTextbox.Text = ufp.ToString();
-            diTextbox.Text = string.IsNullOrEmpty(diTextbox.Text) ? "Not given" : di.ToString();
-            tcfTextbox.Text = tcf.ToString();
-            fpTextbox.Text = ((double)ufp * tcf).ToString();
+            ufpTextbox.Text = ufp.ToString("0");
+            diTextbox.Text = di.ToString("0.00");
+            tcfTextbox.Text = tcf.ToString("0.00");
+            fpTextbox.Text = ((double)ufp * tcf).ToString("0.00");
             initializeAVCCombobox();
         }
 
