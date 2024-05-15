@@ -8,18 +8,20 @@ namespace ProjectMetricsFP
         TextBox[] totalTextBoxes;
         public static int ufpValue = 0;
         Dictionary<int, int[]> complexityTableValues = new Dictionary<int, int[]>();
-        
+
         public calculateUFP()
         {
 
             InitializeComponent();
 
+            MainMenu.DarkModeTheme(this); //Comment it to disable it;
+
+            //Creating 2D array containing an array for each Complexity (Simple,Average,Complex)
             textBoxesComplexities = new TextBox[3][] {
                  new TextBox[] { inputSimple, outputSimple, inquirySimple, interfaceSimple, logicalSimple },
                  new TextBox[] { inputAverage, outputAverage, inquiryAverage, interfaceAverage, logicalAverage },
                  new TextBox[] { inputComplex, outputComplex, inquiryComplex, interfaceComplex, logicalComplex }
             };
-
             totalTextBoxes = new TextBox[] { inputTotal, outputTotal, inquiryTotal, interfaceTotal, logicalTotal };
 
             //Initializing Placeholders
@@ -50,20 +52,16 @@ namespace ProjectMetricsFP
 
             //Initialize Complexity Table
             createComplexityTable();
-
-
-
-
         }
 
         private void TextBox_Enter(object sender, EventArgs e, string complexity)
         {
             var textBox = (TextBox)sender;
-            // Clean when focused
+            // Clear when focused
             if (textBox.Text == complexity)
             {
                 textBox.Text = "";
-                textBox.ForeColor = SystemColors.WindowText;
+                textBox.ForeColor = Color.White;
             }
         }
 
@@ -75,7 +73,7 @@ namespace ProjectMetricsFP
             if (string.IsNullOrWhiteSpace(textBox.Text))
             {
                 textBox.Text = complexity;
-                textBox.ForeColor = SystemColors.GrayText;
+                textBox.ForeColor = Color.FromArgb(60, 60, 60); ;
             }
         }
 
@@ -92,7 +90,7 @@ namespace ProjectMetricsFP
                 DialogResult = DialogResult.OK;
                 Close();
             }
-                
+
         }
 
         private bool verifyInputs()
@@ -165,6 +163,6 @@ namespace ProjectMetricsFP
             //MessageBox.Show(ufpValue.ToString());   
         }
 
-     
+
     }
 }

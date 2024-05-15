@@ -59,35 +59,35 @@
             // 
             // inputTotal
             // 
-            inputTotal.Location = new Point(112, 87);
+            inputTotal.Location = new Point(149, 90);
             inputTotal.Name = "inputTotal";
             inputTotal.Size = new Size(100, 23);
             inputTotal.TabIndex = 0;
             // 
             // outputTotal
             // 
-            outputTotal.Location = new Point(112, 196);
+            outputTotal.Location = new Point(149, 196);
             outputTotal.Name = "outputTotal";
             outputTotal.Size = new Size(100, 23);
             outputTotal.TabIndex = 1;
             // 
             // interfaceTotal
             // 
-            interfaceTotal.Location = new Point(522, 196);
+            interfaceTotal.Location = new Point(582, 196);
             interfaceTotal.Name = "interfaceTotal";
             interfaceTotal.Size = new Size(100, 23);
             interfaceTotal.TabIndex = 3;
             // 
             // inquiryTotal
             // 
-            inquiryTotal.Location = new Point(112, 317);
+            inquiryTotal.Location = new Point(149, 319);
             inquiryTotal.Name = "inquiryTotal";
             inquiryTotal.Size = new Size(100, 23);
             inquiryTotal.TabIndex = 2;
             // 
             // logicalTotal
             // 
-            logicalTotal.Location = new Point(522, 90);
+            logicalTotal.Location = new Point(582, 90);
             logicalTotal.Name = "logicalTotal";
             logicalTotal.Size = new Size(100, 23);
             logicalTotal.TabIndex = 4;
@@ -95,61 +95,66 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(16, 90);
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(25, 90);
             label1.Name = "label1";
-            label1.Size = new Size(80, 15);
+            label1.Size = new Size(105, 21);
             label1.TabIndex = 6;
             label1.Text = "External Input";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(16, 199);
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(25, 198);
             label2.Name = "label2";
-            label2.Size = new Size(90, 15);
+            label2.Size = new Size(118, 21);
             label2.TabIndex = 7;
             label2.Text = "External Output";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(17, 320);
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(25, 317);
             label3.Name = "label3";
-            label3.Size = new Size(89, 15);
+            label3.Size = new Size(118, 21);
             label3.TabIndex = 8;
             label3.Text = "External Inquiry";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(392, 199);
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(412, 198);
             label4.Name = "label4";
-            label4.Size = new Size(124, 15);
+            label4.Size = new Size(164, 21);
             label4.TabIndex = 9;
             label4.Text = "External Interface Files";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(392, 93);
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(412, 90);
             label5.Name = "label5";
-            label5.Size = new Size(114, 15);
+            label5.Size = new Size(151, 21);
             label5.TabIndex = 10;
             label5.Text = "Internal Logical Files";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(10, 9);
+            label7.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(12, 9);
             label7.Name = "label7";
-            label7.Size = new Size(296, 28);
+            label7.Size = new Size(390, 32);
             label7.TabIndex = 12;
             label7.Text = "Enter Your Data To Calculate UFP";
             // 
             // inputSimple
             // 
-            inputSimple.Location = new Point(235, 58);
+            inputSimple.Location = new Point(280, 64);
             inputSimple.Name = "inputSimple";
             inputSimple.Size = new Size(100, 23);
             inputSimple.TabIndex = 13;
@@ -157,7 +162,7 @@
             // 
             // inputAverage
             // 
-            inputAverage.Location = new Point(235, 87);
+            inputAverage.Location = new Point(280, 93);
             inputAverage.Name = "inputAverage";
             inputAverage.Size = new Size(100, 23);
             inputAverage.TabIndex = 14;
@@ -165,7 +170,7 @@
             // 
             // inputComplex
             // 
-            inputComplex.Location = new Point(235, 116);
+            inputComplex.Location = new Point(280, 122);
             inputComplex.Name = "inputComplex";
             inputComplex.Size = new Size(100, 23);
             inputComplex.TabIndex = 15;
@@ -173,7 +178,7 @@
             // 
             // outputComplex
             // 
-            outputComplex.Location = new Point(235, 232);
+            outputComplex.Location = new Point(280, 235);
             outputComplex.Name = "outputComplex";
             outputComplex.Size = new Size(100, 23);
             outputComplex.TabIndex = 18;
@@ -181,7 +186,7 @@
             // 
             // outputAverage
             // 
-            outputAverage.Location = new Point(235, 203);
+            outputAverage.Location = new Point(280, 206);
             outputAverage.Name = "outputAverage";
             outputAverage.Size = new Size(100, 23);
             outputAverage.TabIndex = 17;
@@ -189,7 +194,7 @@
             // 
             // outputSimple
             // 
-            outputSimple.Location = new Point(235, 174);
+            outputSimple.Location = new Point(280, 177);
             outputSimple.Name = "outputSimple";
             outputSimple.Size = new Size(100, 23);
             outputSimple.TabIndex = 16;
@@ -197,7 +202,7 @@
             // 
             // inquiryComplex
             // 
-            inquiryComplex.Location = new Point(235, 346);
+            inquiryComplex.Location = new Point(280, 349);
             inquiryComplex.Name = "inquiryComplex";
             inquiryComplex.Size = new Size(100, 23);
             inquiryComplex.TabIndex = 21;
@@ -205,7 +210,7 @@
             // 
             // inquiryAverage
             // 
-            inquiryAverage.Location = new Point(235, 317);
+            inquiryAverage.Location = new Point(280, 320);
             inquiryAverage.Name = "inquiryAverage";
             inquiryAverage.Size = new Size(100, 23);
             inquiryAverage.TabIndex = 20;
@@ -213,7 +218,7 @@
             // 
             // inquirySimple
             // 
-            inquirySimple.Location = new Point(235, 288);
+            inquirySimple.Location = new Point(280, 291);
             inquirySimple.Name = "inquirySimple";
             inquirySimple.Size = new Size(100, 23);
             inquirySimple.TabIndex = 19;
@@ -221,7 +226,7 @@
             // 
             // interfaceComplex
             // 
-            interfaceComplex.Location = new Point(648, 225);
+            interfaceComplex.Location = new Point(708, 225);
             interfaceComplex.Name = "interfaceComplex";
             interfaceComplex.Size = new Size(100, 23);
             interfaceComplex.TabIndex = 24;
@@ -229,7 +234,7 @@
             // 
             // interfaceAverage
             // 
-            interfaceAverage.Location = new Point(648, 196);
+            interfaceAverage.Location = new Point(708, 196);
             interfaceAverage.Name = "interfaceAverage";
             interfaceAverage.Size = new Size(100, 23);
             interfaceAverage.TabIndex = 23;
@@ -237,7 +242,7 @@
             // 
             // interfaceSimple
             // 
-            interfaceSimple.Location = new Point(648, 167);
+            interfaceSimple.Location = new Point(708, 167);
             interfaceSimple.Name = "interfaceSimple";
             interfaceSimple.Size = new Size(100, 23);
             interfaceSimple.TabIndex = 22;
@@ -245,7 +250,7 @@
             // 
             // logicalComplex
             // 
-            logicalComplex.Location = new Point(648, 119);
+            logicalComplex.Location = new Point(708, 119);
             logicalComplex.Name = "logicalComplex";
             logicalComplex.Size = new Size(100, 23);
             logicalComplex.TabIndex = 27;
@@ -253,7 +258,7 @@
             // 
             // logicalAverage
             // 
-            logicalAverage.Location = new Point(648, 90);
+            logicalAverage.Location = new Point(708, 90);
             logicalAverage.Name = "logicalAverage";
             logicalAverage.Size = new Size(100, 23);
             logicalAverage.TabIndex = 26;
@@ -261,7 +266,7 @@
             // 
             // logicalSimple
             // 
-            logicalSimple.Location = new Point(648, 61);
+            logicalSimple.Location = new Point(708, 61);
             logicalSimple.Name = "logicalSimple";
             logicalSimple.Size = new Size(100, 23);
             logicalSimple.TabIndex = 25;
@@ -270,20 +275,20 @@
             // calculateUFPbutton
             // 
             calculateUFPbutton.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            calculateUFPbutton.Location = new Point(642, 332);
-            calculateUFPbutton.Name = "calculateUFP";
+            calculateUFPbutton.Location = new Point(702, 320);
+            calculateUFPbutton.Name = "calculateUFPbutton";
             calculateUFPbutton.Size = new Size(106, 49);
             calculateUFPbutton.TabIndex = 28;
             calculateUFPbutton.Text = "Calculate UFP";
             calculateUFPbutton.UseVisualStyleBackColor = true;
             calculateUFPbutton.Click += calculateUFP_Click;
             // 
-            // Form1
+            // calculateUFP
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(852, 395);
             Controls.Add(calculateUFPbutton);
             Controls.Add(logicalComplex);
             Controls.Add(logicalAverage);
@@ -311,7 +316,7 @@
             Controls.Add(inquiryTotal);
             Controls.Add(outputTotal);
             Controls.Add(inputTotal);
-            Name = "Form1";
+            Name = "calculateUFP";
             Text = "Form1";
             Load += Form1_Load;
             ResumeLayout(false);

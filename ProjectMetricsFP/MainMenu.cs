@@ -7,16 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
 
 namespace ProjectMetricsFP
 {
     public partial class MainMenu : Form
     {
 
-        public static double tcfValue = 0; 
+        public static double tcfValue = 0;
         public MainMenu()
         {
             InitializeComponent();
+            DarkModeTheme(this); //Comment it to disable it
         }
 
         private void proceedButton_Click(object sender, EventArgs e)
@@ -24,7 +27,7 @@ namespace ProjectMetricsFP
             calculateUFP ufpCalc = new calculateUFP();
             calculateDI diCalc = new calculateDI();
             bool istcfgiven = true;
-            
+
 
             //If all givens are not empty
             if (!(string.IsNullOrEmpty(ufpTextbox.Text)) && !(string.IsNullOrEmpty(diTextbox.Text)) && !(string.IsNullOrEmpty(tcfTextbox.Text)))
@@ -46,7 +49,8 @@ namespace ProjectMetricsFP
                     //{
                     //    MessageBox.Show(calculateUFP.ufpValue.ToString());
                     //}
-                } else
+                }
+                else
                     calculateUFP.ufpValue = Convert.ToInt32(ufpTextbox.Text);
 
                 //If BOTH DI and TCF are empty
@@ -67,14 +71,15 @@ namespace ProjectMetricsFP
                 if (string.IsNullOrEmpty(tcfTextbox.Text))
                 {
                     istcfgiven = false;
-                    if(string.IsNullOrEmpty(diTextbox.Text))
+                    if (string.IsNullOrEmpty(diTextbox.Text))
                     {
                         diTextbox.Text = "0";
-                    } 
+                    }
                     else
                         calculateDI.diValue = Convert.ToInt32(diTextbox.Text);
                     tcfValue = (double)(0.65 + (0.01 * calculateDI.diValue));
-                } else
+                }
+                else
                     tcfValue = Convert.ToDouble(tcfTextbox.Text);
 
 
@@ -85,12 +90,46 @@ namespace ProjectMetricsFP
             }
 
 
-            Summary summary = new Summary(calculateUFP.ufpValue, calculateDI.diValue,tcfValue);
+            Summary summary = new Summary(calculateUFP.ufpValue, calculateDI.diValue, tcfValue);
             summary.ShowDialog();
             Visible = false;
 
             Close();
 
         }
+        public static void DarkModeTheme(Control control)
+        {
+            //Setting background color of the form
+            control.BackColor = System.Drawing.ColorTranslator.FromHtml("#0A0E14");
+
+            foreach (Control ctrl in control.Controls)
+            {
+                //Checking what is the element passed to change its colors
+                switch (ctrl)
+                {
+                    case Label label:
+                        label.ForeColor = Color.White;
+                        break;
+                    case System.Windows.Forms.TextBox textbox:
+                        textbox.BackColor = Color.FromArgb(30, 30, 30); // Dark gray
+                        textbox.ForeColor = Color.White;
+                        break;
+                    case System.Windows.Forms.Button button:
+                        button.BackColor = Color.FromArgb(0, 31, 61); // Navy blue
+                        button.ForeColor = Color.White; 
+                        button.Padding = new Padding(5, 10, 5, 10);
+                        button.AutoSize = true;
+                        break;
+                    case System.Windows.Forms.ComboBox combobox:
+                        combobox.BackColor = Color.FromArgb(30, 30, 30); // Dark gray
+                        combobox.ForeColor = Color.White;
+                        break;
+                    default:
+                        break;
+                }
+
+            }
+        }
+
     }
 }

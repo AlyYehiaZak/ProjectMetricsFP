@@ -45,7 +45,7 @@
             // 
             welcomeLabel.AutoSize = true;
             welcomeLabel.Font = new Font("Segoe UI", 26.25F, FontStyle.Italic, GraphicsUnit.Point);
-            welcomeLabel.Location = new Point(191, 32);
+            welcomeLabel.Location = new Point(127, 29);
             welcomeLabel.Name = "welcomeLabel";
             welcomeLabel.Size = new Size(419, 47);
             welcomeLabel.TabIndex = 0;
@@ -55,7 +55,7 @@
             // 
             madeByLabel.AutoSize = true;
             madeByLabel.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            madeByLabel.Location = new Point(173, 393);
+            madeByLabel.Location = new Point(109, 390);
             madeByLabel.Name = "madeByLabel";
             madeByLabel.Size = new Size(457, 17);
             madeByLabel.TabIndex = 1;
@@ -64,27 +64,30 @@
             // ufpLabel
             // 
             ufpLabel.AutoSize = true;
-            ufpLabel.Location = new Point(286, 195);
+            ufpLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            ufpLabel.Location = new Point(215, 191);
             ufpLabel.Name = "ufpLabel";
-            ufpLabel.Size = new Size(28, 15);
+            ufpLabel.Size = new Size(38, 21);
             ufpLabel.TabIndex = 2;
             ufpLabel.Text = "UFP";
             // 
             // diLabel
             // 
             diLabel.AutoSize = true;
-            diLabel.Location = new Point(286, 235);
+            diLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            diLabel.Location = new Point(215, 231);
             diLabel.Name = "diLabel";
-            diLabel.Size = new Size(18, 15);
+            diLabel.Size = new Size(25, 21);
             diLabel.TabIndex = 3;
             diLabel.Text = "DI";
             // 
             // tcfLabel
             // 
             tcfLabel.AutoSize = true;
-            tcfLabel.Location = new Point(286, 277);
+            tcfLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            tcfLabel.Location = new Point(215, 273);
             tcfLabel.Name = "tcfLabel";
-            tcfLabel.Size = new Size(26, 15);
+            tcfLabel.Size = new Size(35, 21);
             tcfLabel.TabIndex = 4;
             tcfLabel.Text = "TCF";
             // 
@@ -92,7 +95,7 @@
             // 
             sweLabel.AutoSize = true;
             sweLabel.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            sweLabel.Location = new Point(381, 424);
+            sweLabel.Location = new Point(317, 421);
             sweLabel.Name = "sweLabel";
             sweLabel.Size = new Size(41, 17);
             sweLabel.TabIndex = 5;
@@ -100,21 +103,21 @@
             // 
             // ufpTextbox
             // 
-            ufpTextbox.Location = new Point(343, 192);
+            ufpTextbox.Location = new Point(279, 189);
             ufpTextbox.Name = "ufpTextbox";
             ufpTextbox.Size = new Size(133, 23);
             ufpTextbox.TabIndex = 6;
             // 
             // diTextbox
             // 
-            diTextbox.Location = new Point(343, 232);
+            diTextbox.Location = new Point(279, 229);
             diTextbox.Name = "diTextbox";
             diTextbox.Size = new Size(133, 23);
             diTextbox.TabIndex = 7;
             // 
             // tcfTextbox
             // 
-            tcfTextbox.Location = new Point(343, 274);
+            tcfTextbox.Location = new Point(279, 271);
             tcfTextbox.Name = "tcfTextbox";
             tcfTextbox.Size = new Size(133, 23);
             tcfTextbox.TabIndex = 8;
@@ -123,7 +126,7 @@
             // 
             instructionLabel.AutoSize = true;
             instructionLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            instructionLabel.Location = new Point(101, 122);
+            instructionLabel.Location = new Point(37, 119);
             instructionLabel.Name = "instructionLabel";
             instructionLabel.Size = new Size(585, 21);
             instructionLabel.TabIndex = 9;
@@ -131,7 +134,7 @@
             // 
             // proceedButton
             // 
-            proceedButton.Location = new Point(357, 336);
+            proceedButton.Location = new Point(293, 333);
             proceedButton.Name = "proceedButton";
             proceedButton.Size = new Size(96, 26);
             proceedButton.TabIndex = 10;
@@ -143,7 +146,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(811, 450);
+            ClientSize = new Size(704, 450);
             Controls.Add(proceedButton);
             Controls.Add(instructionLabel);
             Controls.Add(tcfTextbox);

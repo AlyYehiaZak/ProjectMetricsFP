@@ -30,7 +30,9 @@ namespace ProjectMetricsFP
         public Summary(int ufp, int di, double tcf)
         {
             InitializeComponent();
+            MainMenu.DarkModeTheme(this); //Comment it to disable it;
 
+            //Handling decimals of each value
             ufpTextbox.Text = ufp.ToString("0");
             diTextbox.Text = di.ToString("0.00");
             tcfTextbox.Text = tcf.ToString("0.00");

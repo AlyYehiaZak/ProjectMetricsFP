@@ -17,21 +17,14 @@ namespace ProjectMetricsFP
         public calculateDI()
         {
             InitializeComponent();
+            MainMenu.DarkModeTheme(this); //Comment it to disable it
+
+            // Initializing DI Complexity Factors
             comboBox = new ComboBox[14] { comboBox1, comboBox2, comboBox3, comboBox4, comboBox5, comboBox6, comboBox7, comboBox8, comboBox9, comboBox10, comboBox11, comboBox12, comboBox13, comboBox14 };
             for (int i = 0; i < comboBox.Length; i++)
             {
-                comboBox[i].Items.AddRange(new object[] { "No influence", "incidiental", "Moderate", "Average", "Significant", "Essential" });
+                comboBox[i].Items.AddRange(new object[] { "No influence", "Incidiental", "Moderate", "Average", "Significant", "Essential" });
             }
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -39,7 +32,7 @@ namespace ProjectMetricsFP
             Dictionary<string, int> D = new Dictionary<string, int>()
             {
                 {"No influence",0 },
-                {"incidiental",1 },
+                {"Incidiental",1 },
                 {"Moderate",2 },
                 {"Average",3 },
                 {"Significant",4 },
