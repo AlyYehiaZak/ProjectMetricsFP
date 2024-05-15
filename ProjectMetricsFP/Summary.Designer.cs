@@ -47,7 +47,7 @@
             // 
             summaryTitle.AutoSize = true;
             summaryTitle.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            summaryTitle.Location = new Point(88, 21);
+            summaryTitle.Location = new Point(121, 38);
             summaryTitle.Name = "summaryTitle";
             summaryTitle.Size = new Size(399, 32);
             summaryTitle.TabIndex = 0;
@@ -55,21 +55,21 @@
             // 
             // tcfTextbox
             // 
-            tcfTextbox.Location = new Point(231, 163);
+            tcfTextbox.Location = new Point(276, 180);
             tcfTextbox.Name = "tcfTextbox";
             tcfTextbox.Size = new Size(133, 23);
             tcfTextbox.TabIndex = 14;
             // 
             // diTextbox
             // 
-            diTextbox.Location = new Point(231, 126);
+            diTextbox.Location = new Point(276, 143);
             diTextbox.Name = "diTextbox";
             diTextbox.Size = new Size(133, 23);
             diTextbox.TabIndex = 13;
             // 
             // ufpTextbox
             // 
-            ufpTextbox.Location = new Point(231, 86);
+            ufpTextbox.Location = new Point(276, 103);
             ufpTextbox.Name = "ufpTextbox";
             ufpTextbox.Size = new Size(133, 23);
             ufpTextbox.TabIndex = 12;
@@ -78,7 +78,7 @@
             // 
             tcfLabel.AutoSize = true;
             tcfLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            tcfLabel.Location = new Point(161, 166);
+            tcfLabel.Location = new Point(194, 183);
             tcfLabel.Name = "tcfLabel";
             tcfLabel.Size = new Size(35, 21);
             tcfLabel.TabIndex = 11;
@@ -88,7 +88,7 @@
             // 
             diLabel.AutoSize = true;
             diLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            diLabel.Location = new Point(161, 124);
+            diLabel.Location = new Point(194, 141);
             diLabel.Name = "diLabel";
             diLabel.Size = new Size(25, 21);
             diLabel.TabIndex = 10;
@@ -98,7 +98,7 @@
             // 
             ufpLabel.AutoSize = true;
             ufpLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            ufpLabel.Location = new Point(161, 84);
+            ufpLabel.Location = new Point(194, 101);
             ufpLabel.Name = "ufpLabel";
             ufpLabel.Size = new Size(38, 21);
             ufpLabel.TabIndex = 9;
@@ -106,14 +106,14 @@
             // 
             // locTextbox
             // 
-            locTextbox.Location = new Point(231, 310);
+            locTextbox.Location = new Point(264, 327);
             locTextbox.Name = "locTextbox";
             locTextbox.Size = new Size(133, 23);
             locTextbox.TabIndex = 18;
             // 
             // fpTextbox
             // 
-            fpTextbox.Location = new Point(231, 204);
+            fpTextbox.Location = new Point(276, 221);
             fpTextbox.Name = "fpTextbox";
             fpTextbox.Size = new Size(133, 23);
             fpTextbox.TabIndex = 17;
@@ -122,7 +122,7 @@
             // 
             locLabel.AutoSize = true;
             locLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            locLabel.Location = new Point(157, 308);
+            locLabel.Location = new Point(190, 325);
             locLabel.Name = "locLabel";
             locLabel.Size = new Size(39, 21);
             locLabel.TabIndex = 16;
@@ -132,7 +132,7 @@
             // 
             fpLabel.AutoSize = true;
             fpLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            fpLabel.Location = new Point(161, 207);
+            fpLabel.Location = new Point(194, 224);
             fpLabel.Name = "fpLabel";
             fpLabel.Size = new Size(27, 21);
             fpLabel.TabIndex = 15;
@@ -142,7 +142,7 @@
             // 
             avcLabel.AutoSize = true;
             avcLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            avcLabel.Location = new Point(45, 261);
+            avcLabel.Location = new Point(78, 278);
             avcLabel.Name = "avcLabel";
             avcLabel.Size = new Size(373, 21);
             avcLabel.TabIndex = 19;
@@ -151,7 +151,7 @@
             // avcCombobox
             // 
             avcCombobox.FormattingEnabled = true;
-            avcCombobox.Location = new Point(424, 259);
+            avcCombobox.Location = new Point(468, 278);
             avcCombobox.Name = "avcCombobox";
             avcCombobox.Size = new Size(121, 23);
             avcCombobox.TabIndex = 20;
@@ -161,7 +161,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(613, 383);
+            ClientSize = new Size(679, 428);
             Controls.Add(avcCombobox);
             Controls.Add(avcLabel);
             Controls.Add(locTextbox);

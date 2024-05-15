@@ -329,7 +329,7 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(517, 200);
+            button1.Location = new Point(530, 200);
             button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
             button1.Size = new Size(172, 70);
@@ -352,7 +352,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(733, 450);
+            ClientSize = new Size(751, 457);
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(comboBox14);
